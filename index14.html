@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+
+    <script src="./jquery.min.js"></script>
+    <script>
+        $("<p>").appendTo("body").text("Welcome").css({
+            color: "red",
+            fontSize: "50px",
+            fontfamily: "ariel"
+
+        })
+        $("<img>").attr({
+            src: "burger-7581817_1920.jpg",
+            width: "300",
+            alt: "Burger"
+        })
+            .appendTo("body")
+
+        $("<input>").attr({
+            type: "text",
+            placeholder: "User name",
+
+        })
+            .appendTo("body")
+
+    </script>
+</body>
+
+</html>

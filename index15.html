@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="main">
+        <h1>Hello</h1>
+        <h2>welcome</h2>
+        <div class="app">
+            <h4>Hello1</h4>
+            <p>Lorem ipsum dolor sit amet.</p>
+            <div class="sub">
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+            </div>
+            <b>Lorem ipsum dolor sit amet.</b>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Culpa, ipsum.
+
+            </p>
+        </div>
+        <h1>Lorem ipsum dolor sit amet.444444444</h1>
+        <h3>Lorem ipsum dolor sit amet.211651654</h3>
+    </div>
+    <script src="./jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            let app = $(".app")
+            let main = $(".main")
+            main.css("background", "green")
+            app.css("background", "orange")
+            console.log(app);
+            console.log(app.parent());
+            console.log(app.parents());
+            console.log(app.parents("body"));
+            console.log(app.parents()[1]);
+
+            console.log(app.children());
+            console.log(app.children("p"));
+            console.log(app.children()[0]);
+            console.log(app.children()[1]);
+
+            console.log(app.prev());
+            console.log(app.prevAll());
+            console.log(app.prevAll()[0]);
+            console.log(app.prevAll()[1]);
+            console.log(app.prevAll("h1"));
+
+            console.log(app.next());
+            console.log(app.nextAll());
+            console.log(app.nextAll()[0]);
+            console.log(app.nextAll()[1]);
+
+
+            console.log(main.next());
+            console.log(main.next()[0]);
+            console.log(main.children());
+            console.log(main.children()[1]);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        });
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    h3 {
+        width: 200px;
+        height: 200px;
+        background-color: red;
+    }
+
+    #para1 {
+        width: 400px;
+        height: 200px;
+        background-color: pink;
+    }
+</style>
+
+<body>
+    <h3 class="para">bla bla bla</h3>
+    <div id="para1">Lorem ipsum dolor sit amet.</div>
+    <div class="app">
+        <h1>Hello</h1>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sint eaque laudantium nostrum commodi ex
+            voluptatum!</p>
+        <button>Click</button>
+    </div>
+    <script src="./jquery.min.js"></script>
+    <script>
+        // jqdoc 
+        $(document).ready(function () {
+            $(".app").css("background", "orange")
+            $("h1").css({
+                color: "blue",
+                fontSize: "50px"
+            })
+            $("button").click(function () {
+
+                $(this).html("Change to bla bla")
+
+            })
+            $(".para").addClass("h3").attr("id", "title")
+
+
+        });
+    </script>
+</body>
+
+</html>

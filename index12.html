@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <script>
+        let p = document.createElement("p")
+        p.innerText = "Welcome"
+        p.style.color = "blue"
+        p.style.background = "orange"
+        p.style.padding = "10px"
+        p.style.textAlign = "center"
+        p.style.fontSize = "20px"
+        p.style.fontFamily = "serif"
+        document.body.appendChild(p)
+
+
+        let a = document.createElement("a")
+        a.href = "https://google.com"
+        a.innerHTML = "Google"
+        document.body.appendChild(a)
+
+
+        let image = document.createElement("img")
+        image.src = "burger-7581817_1920.jpg"
+        image.width = "300"
+        document.body.appendChild(image)
+
+
+        let inpt = document.createElement("input")
+        // inpt.type = "password"
+        inpt.number = "number"
+        inpt.placeholder = "Username"
+        document.body.appendChild(inpt)
+
+
+    </script>
+</body>
+
+</html>
